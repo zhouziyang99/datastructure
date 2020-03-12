@@ -1,0 +1,29 @@
+实现方法一：
+
+stack=[]
+stack.append('a')
+stack.append('b')
+stack.pop()
+
+实现方法二：duque
+
+from collections import deque
+stack=deque()
+stack.append('a')
+stack.append('b')
+stack.pop()
+
+三：
+from queue import LifoQueue
+stack=LifoQueue(maxsize=3)
+stack.put('a')
+satck.put('b')
+print (stack.get())
+
+常用函数：
+empty()
+full()
+get()
+get_nowait()
+put()
+qsize()
